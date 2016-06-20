@@ -40,8 +40,7 @@ INTERVALLUMGRÁF SZÍNEZÉSE Tétel: G intervallumgráf, emiatt:
 $$\omega(G) = \chi(G)$$
 \end{framed}
 \begin{leftbar}
-Mohó színezéssel bizonyítjuk, méghozzá úgy, hogy az intervallumokat bal végpontja szerint rendezem és ezek alapján növekvő sorrendben színezem, akkor optimális színezést kapok. T.f.h. k színnel színez a mohó algoritmus. A cél az, hogy belássuk a következőt:
-$$k \leq \omega(G) \leq \chi(G) \leq k$$. MAJD.
+Bizonyítás: Azt tudjuk, hogy $\chi (G)\geq \omega (G)$  ezért elég belátni, hogy $ \omega (G)\geq \chi (G)$. Legyen $ \omega (G)=k$. Színezzük az intervallumokat bal végpontjuk szerint, balról jobbra, a legelső színnel, ami nem mond ellent a korábbi intervallumok színezésének (ez tehát a mohó algoritmus használata). Ha a $k+1$-edik színt kellene használnunk valamelyik intervallum színezéséhez, az azt jelentené, hogy ennek az intervallumnak q bal oldali végpontja benne van $k$  másik intervallumban. Ez azt jelentené, hogy van a gráfban $k+1$  méretű klikk, ami ellentmondás. (Hiszen $ \omega (G)=k$, azaz a legnagyobb klikk mérete k).
 \end{leftbar}
 \begin{shaded}
 PÁROS GRÁF Definíció: Egy G gráfot \textbf{páros gráfnak} nevezünk, ha G pontjainak V(G) halmazát két részre, egy A és B halmazra tudjuk osztani úgy, hogy G minden élének egyik végpontja A-ban, a másik pedig B-ben van. Ennek jelölése: $G = (A,B)$. A $K_{a,b}$-vel jelölt teljes páros gráf olyan $G=(A,B)$ gráf, ahol $|A| = a$ és $|B| = b$ és minden A-beli pont össze van kötve minden B-beli ponttal.

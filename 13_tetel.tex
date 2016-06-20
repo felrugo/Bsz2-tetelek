@@ -21,6 +21,9 @@
 \begin{framed}
 EGÉSZÉRTÉKŰSÉGI LEMMA Lemma: Ha (G,s,t,c) hálózatban minden e él c(e) kapacitása egész szám, akkor létezik olyan f maximális folyam, hogy f a G gráf minden élén egész értéket vesz fel. Az ilyen folyamot \textbf{egészfolyamnak} nevezzük.
 \end{framed}
+\begin{leftbar}
+BIZONYÍTÁS: Az állítás nyilvánvaló, hiszen a kiindulási, azonosan 0 folyam rendelkezik a kívánt tulajdonsággal, majd az algoritmus során minden lépésben a folyamértékek minden élen csak egész számmal változhattak.
+\end{leftbar}
 \begin{framed}
 A FOLYAMPROBLÉMA ÁLTALÁNOSÍTÁSAI: T.f.h. a hálózatban több termelő, $s_1, s_2,...,s_k$ és több fogyasztó, $t_1, t_2,..t_k$ van. A feladat az összes termelőtől az összes fogyasztóig eljutó folyam maximalizálása. Vegyünk fel két s', t' pontot, és kössük össze s'-t az összes termelővel, t'-t pedig az összes fogyasztóval, az élek kapacitása ezek között pedig legyen $\infty$.
 \\

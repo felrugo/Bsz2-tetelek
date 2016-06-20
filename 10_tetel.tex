@@ -39,7 +39,7 @@ Bizonyítás: Először az első állítást bizonyítjuk. Legyen M egy olyan p�
 \begin{framed}
 HALL-TÉTEL Tétel: Egy $G = (A,B)$ páros gráfban akkor és csak akkor van A-t lefedő párosítás, ha minden $X \subseteq A$ részhalmazra $|N(X)| \geq |X|$ (ezt \textbf{Hall-feltételnek} nevezzük).
 \end{framed}
-\begin{leftbar}???
+\begin{leftbar}
 Bizonyítás: A szükségesség nyilvánvaló: ha létezik $A$-t fedő párosítás, akkor minden $A$-beli pontnak különböző párja van, tehát tetszőleges $X \subseteq A$ esetén az $X$-beli elemek $B$-beli párjai az $N(X)$ egy $|X|$ méretű részhalmazát alkotják. Az elégségességhez tegyük fel, hogy $|X| \leq |N(X)|$ minden $X \subseteq A$-ra. Azt kell igazolnunk,
 hogy $\nu(G) \geq |A|$. Legyen $U$ minimális (azaz $\tau(G)$ méretű) lefogó ponthalmaz, és legyen $U_A := U \cap A$, $U_B := U \cap B$. Mivel $U$ lefogja az $X := A \setminus U_A$-ból induló éleket,
 ezért $N(X) \subseteq U_B$ tehát $|N(X)| \leq |U_B|$. A Kőnig tétel illetve a Hall feltétel miatt:
